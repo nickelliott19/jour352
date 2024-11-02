@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Sixtyfour+Convergence&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap');
+
+body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    color: #11151C;
+}
+
+h1,
+h3 {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    margin-top: 1%;
+}
+
+h2 {
+    margin-bottom: 0.5%;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 9% 0 5%;
+}
+
+.container {
+    width: 50%;
+}
+
+header {
+    background-color: #050220;
+    color: #FEFEFE;
+    text-align: center;
+}
+
+header img,
+.chart img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.top p {
+    font-size: 2.5em;
+}
+
+.bottom h2 {
+    font-size: 1em;
+}
+
+.bottom p {
+    padding-bottom: 1.5%;
+}
+
+.birth h3 {
+    margin-top: 8%;
+}
+
+.birth p {
+    margin: 8% 0;
+}
+
+.map {
+    display: flex;
+    background-color: #050220;
+    color: #FFF;
+    padding: 15px 0;
+    width: 100vw;
+    text-align: left;
+    justify-content: center;
+}
+
+.map img {
+    width: 80%;
+    margin: 10px 20px 10px 15%;
+}
+
+.map p {
+    font-size: 1em;
+    margin-left: 35%;
+}
+
+.albums {
+    display: flex;
+    background-color: #050220;
+    color: #FFF;
+    padding: 20px;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.album-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.album-item img {
+    margin-bottom: 10px;
+}
+
+.evolution h3,
+.creative h3 {
+    margin-top: 8%;
+}
+
+.evolution p,
+.creative p {
+    margin: 8% 0;
+}
+
+
+footer {
+    margin: 5% 0;
+    text-align: center;
+}
+
+@media (max-width: 776px) {
+    .container {
+        width: 97%;
+    }
+}
+
+@media (max-width: 768px) {
+    .map {
+        flex-direction: column;
+    }
+
+    .map p {
+        margin-left: 2%;
+    }
+
+    .map img {
+        margin-left: 9%;
+    }
+}
+
+@media (max-width: 768px) {
+    .albums {
+        flex-direction: column;
+        align-items: center;
+        padding: 4%;
+    }
+
+    .album-item {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .album-item img {
+        width: 100%;
+        max-width: none;
+        margin-right: 10%;
+    }
+
+    .album-item p {
+        text-align: left;
+    }
+}
