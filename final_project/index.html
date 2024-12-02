@@ -153,20 +153,14 @@
     </main>
 
     <script>
-        // Get video and title elements
         const video = document.getElementById('video');
         const title = document.getElementById('title');
 
         window.addEventListener('scroll', () => {
-            // Get scroll position
             const scrollY = window.scrollY;
-            const titleOffsetTop = title.offsetTop;  // Distance from the top of the page to the title
+            const titleOffsetTop = title.offsetTop;
             const videoContainerHeight = document.querySelector('.video-container').offsetHeight;
-
-            // Calculate how much of the video should fade based on scroll position
             const opacity = Math.max(1 - (scrollY / (titleOffsetTop - videoContainerHeight)), 0);
-
-            // Apply opacity to video element
             video.style.opacity = opacity;
         });
     </script>
