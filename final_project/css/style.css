@@ -132,14 +132,11 @@ main {
 
 .container.d-flex {
     width: 105%;
-    /* Ensure the container stretches across the white background */
     margin-left: -26px;
-
 }
 
 .container.d-flex>div {
     flex: 1;
-    /* Ensure each image div takes up equal space */
 }
 
 .container.d-flex img {
