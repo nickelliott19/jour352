@@ -17,7 +17,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     z-index: -1;
 }
 
@@ -28,7 +28,7 @@ body {
     opacity: 0.5;
     -webkit-mask-image: linear-gradient(to top, transparent, black);
     mask-image: linear-gradient(to top, transparent, black);
-    opacity: .5;
+    opacity: .9;
 }
 
 /* scroll down arrow */
@@ -100,20 +100,9 @@ header {
     margin-bottom: 0;
 }
 
-.title {
-    animation: fadeIn 2s ease-in-out;
+.big_3_trophy_img img {
+    height: 75vh;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 
 main {
     position: relative;
@@ -130,21 +119,35 @@ main {
     padding-bottom: 4%;
 }
 
+.caption_laver {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -20px;
+    padding-bottom: 4%;
+}
+
 .container.d-flex {
-    width: 105%;
-    margin-left: -26px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap to the next line */
+    justify-content: space-between;
+    /* Centers items when stacked */
+    margin: 0 auto;
+    /* Centers the container */
 }
 
 .container.d-flex>div {
-    flex: 1;
+    width: 100%;
+    /* Ensure each image takes full width */
+    margin-bottom: 15px;
+    /* Add space between images */
 }
 
 .container.d-flex img {
-    width: 99%;
-    height: 120%;
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
     object-fit: cover;
-    padding-bottom: 20%;
-    padding-top: 6%;
 }
 
 section {
@@ -157,6 +160,16 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
+.image-row{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.decressin_img img{
+    height: 58vh;
+}
+
 .big_3_laver_cup {
     margin-bottom: 2%;
 }
@@ -166,4 +179,62 @@ footer {
     padding: 1rem 0;
     font-size: 0.8rem;
     color: #777;
+}
+
+.portfolio img{
+    height: 5vh;
+}
+
+@media (max-width: 768px) {
+    .container.d-flex {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-down {
+        margin-bottom: 100%; /* Reduce bottom margin to retain visual balance */
+    }
+}
+
+@media (max-width: 1080px) {
+    .scroll-down {
+        margin-bottom: 50%; /* Reduce bottom margin to retain visual balance */
+        font-size: 3em; /* Reduce font size on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .grand_slams,
+    .weeks,
+    .wins {
+        font-size: 3em; /* Reduce font size on smaller screens */
+        margin-bottom: 180%; /* Reduce bottom margin to retain visual balance */
+        margin-top: 280%;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .grand_slams,
+    .weeks,
+    .wins {
+        font-size: 4em; /* Slightly smaller text for medium screens */
+        margin-bottom: 180%; /* Adjust margin for medium spacing */
+        margin-top: 200%;
+    }
+}
+
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        font-size: .7em; 
+    }
 }
