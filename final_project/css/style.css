@@ -100,10 +100,6 @@ header {
     margin-bottom: 0;
 }
 
-.big_3_trophy_img img {
-    height: 75vh;
-}
-
 main {
     position: relative;
     margin-top: 2%;
@@ -112,6 +108,15 @@ main {
     max-width: 1050px;
     margin-left: auto;
     margin-right: auto;
+}
+
+main h2{
+    margin-top: -45px;
+}
+
+.flourish-embed {
+    margin-top: 4%;
+    margin-bottom: 2%;
 }
 
 .caption {
@@ -153,14 +158,19 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
-.image-row {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
+.caption_djokovic .caption{
+    margin-left: 5%;
 }
 
 .decressin_img img {
-    height: 58vh;
+    height: 59.4vh;
+    width: 47vh;
+    margin-top: 10%;
+}
+
+.djokovic_img img {
+    margin-left: 5%;
+    margin-top: 10%;
 }
 
 .big_3_laver_cup {
@@ -228,5 +238,11 @@ footer {
 @media (max-width: 768px) {
     main {
         font-size: .7em;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        margin-bottom: 15%;
     }
 }
